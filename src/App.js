@@ -12,6 +12,7 @@ function App() {
         <h4>Heading Four</h4>
         <p>Paragraph</p>
         <a>HyperLink</a>
+        <p><strong>Hello</strong></p>
         <br></br>
         <button>Button</button>
     
