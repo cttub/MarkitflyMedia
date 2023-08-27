@@ -95,7 +95,7 @@ class Problem extends Component {
                     </div>
 
                     <p className='text-center d-none d-sm-block'>Challenges in website design, insufficient business analysis, and ineffective online advertisements hinder your <strong>ability to attract</strong> and <strong>engage their target audience</strong>, leading to lower <strong>customer acquisition</strong>, limited growth, and missed<strong> revenue opportunities.</strong></p>
-                    <a href='#solution-statement' className='text-center pink solution-link link'>See our Solutions</a>
+                  
                 </section>
 
                 <section id='solution-statement'>
