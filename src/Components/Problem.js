@@ -10,6 +10,8 @@ import arrow from '../Assets/Icons/arrow.svg';
 import Fade from 'react-reveal/Fade';
 import { InView } from 'react-intersection-observer'; // Import InView from the package
 import frame from '../Assets/Frames/Purple-1.png';
+
+
 class Problem extends Component {
     constructor(props) {
         super(props);
@@ -101,7 +103,7 @@ class Problem extends Component {
                 <section id='solution-statement'>
                     
                     <div>
-                        <h1 className='text-center'>Our Solution</h1>
+                    <Fade up> <h1 className='text-center'>Our Solution</h1></Fade>
 
                         <section className='diagram-container'>
                             <div className='diagram-box'>

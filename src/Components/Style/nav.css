@@ -1,0 +1,107 @@
+#nav > section{
+    position:  fixed;
+    top: 10px;
+    z-index: 99;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    padding: 10px 30px;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#nav > section > a{
+    margin-right: 20px;
+    font-size: 20px !important;
+}
+#nav > section > a, .menu.mobile > a{
+    color: var(--primary-purple);
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease-in-out .2s;
+}
+#nav > section > a:hover{
+    color: var(--third-purple);
+}
+#nav > section > .icon{
+        padding: 14px;
+        height: 30px;
+        border-radius: 26px;
+        background: rgba(255, 255, 255, 0.38);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        transition: ease-in-out .2s;
+}
+#nav > section > .icon:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+#nav > section > .icon:active{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+#nav > section > button{
+    padding: 10px 20px;
+    font-size: 20px !important;
+}
+.mobile-nav{
+    display: none;
+    z-index: 99;
+    position:  fixed;
+    top: 10px;
+    
+}
+#tools-anchor{
+    top: 300px;
+}
+#testimonials-anchor{
+    top: -30px;
+}
+@media only screen and (max-width: 735px){
+    #tools-anchor{
+        top: 0px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    #nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .hamburger{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%)
+
+    }
+}
+.menu.mobile{
+    background: var(--off-white);
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+.menu.mobile > a{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    width: 99vw;
+}
+.menu.mobile > a:hover{
+    color: var(--pink);
+}
+.menu.mobile > a:active{
+    color: var(--orange);
+}
+.close-button{
+    display: flex;
+    justify-content: end;
+    padding: 4px;
+}

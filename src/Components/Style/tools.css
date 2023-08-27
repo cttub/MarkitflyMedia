@@ -1,3 +1,82 @@
 #tools{
     position: relative;
+    padding-bottom: 280px;
+}
+#tools > section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 350px;
+    align-items: center;
+}
+.information{
+    padding: 100px 200px;
+}
+.cogs{
+    position: absolute;
+    z-index: -1;
+    width: 400px;
+    left: -150px;
+}
+
+.service {
+    display: inline-block;
+    margin: 20px 0px;
+}
+.service > h3{
+    margin: 0px 20px;
+    color: var(--primary-purple);
+    border: solid var(--primary-purple);
+    padding: 10px 15px;
+    text-align: center;
+    background-color: var(--off-white);
+    border-radius: 10px;
+}
+
+#tools > section > .bg-cogs{
+    width: 400px;
+    translate: -100px;
+    
+}
+
+.underline{
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+@media only screen and (max-width: 1371px){
+    .service {
+        display: block;
+        width: 100%;
+    }
+    .information{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1370px){
+    #tools{
+        padding-bottom: 110px;
+
+    }
+}
+@media only screen and (max-width: 1083px){
+    .information{
+        padding: 100px 20px;
+    }
+}
+@media only screen and (max-width: 735px){
+    .cogs{
+        opacity: 40%;
+    }
+    #tools{
+        padding-bottom: 40px;
+
+    }
+    #tools > section{
+       
+        padding-top: 55px;
+   
+    }
 }
