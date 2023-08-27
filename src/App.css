@@ -10,8 +10,35 @@
   --pink: #FF0E73;
   --off-white: #FDFBFA;
 }
+body{
+  overflow-x: hidden;
+  background-color: var(--off-white) !important;
+}
 
-
+.off-white{
+  color: var(--off-white) !important;
+}
+.black{
+  color: var(--black) !important;
+}
+.primary-purple{
+  color: var(--primary-purple) !important;
+}
+.secondary-purple{
+  color: var(--secondary-purple) !important;
+}
+.third-purple{
+  color: var(--third-purple) !important;
+}
+.orange{
+  color: var(--orange) !important;
+}
+.secondary-orange{
+  color: var(--secondary-orange) !important;
+}
+.pink{
+  color: var(--pink) !important;
+}
 /**Font Family Imports (Change / Add according to website)**/
 
 
@@ -49,14 +76,20 @@
 h1,h3,h4,h2{
   font-family: 'Brock SemiBold Italic';
 }
-
+h5{
+  font-family: 'Brock Regular';
+}
 /*Main Titles*/
 h1{
-  font-size: 50px !important;
+  font-size: 45px !important;
 }
 h2{
-  font-size: 35px !important;
+  font-size: 40px !important;
 }
+h4{
+  font-size: 55px !important;
+}
+
 
 /*Main Text*/
 p, a,button{
@@ -64,25 +97,29 @@ p, a,button{
 
 }
 p, a{
-  font-size: 30px !important;
+  font-size: 25px !important;
 }
 button{
   font-size: 23px !important;
+  font-family: 'Brock Bold' !important;
+
 }
 
 /*Hyper Link Hover*/
 a{
-  border-bottom: 2px solid;
   transition: ease-in-out .2s;
 }
-a:hover{
-  color: var(--orange) !important;
+a.pink:hover{
+  color: var(--orange);
+}
+.hyperlink{
+  border-bottom: 2px solid;
 }
 /*Button Styling (Change according to website)*/
 button{
   color: var(--off-white);
   border: none;
-  padding: 5px 30px;
+  padding: 10px 40px;
   border-radius: 45.5px !important;
   background: var(--orange);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
@@ -92,6 +129,9 @@ button{
 button:hover{
   background-color: var(--secondary-orange);
   color: white;
+}
+button:active{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.0);
 }
 
 /*Box Shadow*/
@@ -110,6 +150,11 @@ button:hover{
   100% {
     transform: translate(0, 0);
   }
+}
+.bottom-frame{
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
 }
 
 /**Media Queries**/
