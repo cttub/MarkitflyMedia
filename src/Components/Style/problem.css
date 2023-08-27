@@ -1,6 +1,13 @@
-.problem-statement, .solution-statement{
+#problem{
+    position: relative;
+}
+.problem-statement{
    padding: 100px;
    text-align: center;
+   margin-bottom: 100px;
+}
+#solution-statement{
+    padding-bottom: 300px;
 }
 
 .stats-container, .diagram-container{
@@ -57,16 +64,13 @@
     font-size: 20px !important;
 }
 
-#solution-statement{
-    margin-top: 100px;
-}
+
 .solution-paragraph{
     margin: 50px;
 }
 .diagram-container{
     margin-top: 36px;
     justify-content: center;
-
 }
 .arrow{
     width: 64px;
@@ -111,11 +115,15 @@
 }
 
 @media only screen and (max-width: 464px){
-    .problem-statement, .solution-statement{
+    .problem-statement{
         padding: 200px 10px;
     }
     .diagram-container{
         padding: 10px 10px;
-    }
-    
+    } 
+}
+@media only screen and (max-width: 242px){
+  .stats-circle{
+    display: none;
+  }
 }

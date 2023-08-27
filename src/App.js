@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'; //Install Bootstrap (yarn add boo
 
 import Landing from './Components/Landing';
 import Problem from './Components/Problem';
+import Benefits from './Components/Benefits';
+import Tools from './Components/Tools';
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,12 @@ function App() {
         </section>
         <section id='problem-section'>
           <Problem/>
+        </section>
+        <section id='benefits-section'>
+          <Benefits/>
+        </section>
+        <section id='tools-section'>
+          <Tools/>
         </section>
 
       </header>

@@ -9,7 +9,7 @@ import raise from '../Assets/Icons/Moving/Money.png';
 import arrow from '../Assets/Icons/arrow.svg';
 import Fade from 'react-reveal/Fade';
 import { InView } from 'react-intersection-observer'; // Import InView from the package
-
+import frame from '../Assets/Frames/Purple-1.png';
 class Problem extends Component {
     constructor(props) {
         super(props);
@@ -134,6 +134,7 @@ class Problem extends Component {
                     </div>
 
                 </section>
+                <img className='bottom-frame' src={frame} />
 
             </div>
         );

@@ -62,9 +62,16 @@ body{
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Brock Italic';
+  src: url('../public/Fonts/Brockmann-RegularItalic.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .brock-regular{
   font-family: 'Brock Regular' !important;
 }
+
 .brock-semibold-italic{
   font-family: 'Brock SemiBold Italic' !important;
 }
@@ -73,18 +80,21 @@ body{
 }
 
 /*Headings*/
-h1,h3,h4,h2{
+h1,h3,h4{
   font-family: 'Brock SemiBold Italic';
 }
 h5{
   font-family: 'Brock Regular';
+}
+h2{
+  font-family: 'Brock Italic';
 }
 /*Main Titles*/
 h1{
   font-size: 45px !important;
 }
 h2{
-  font-size: 40px !important;
+  font-size: 28px !important;
 }
 h4{
   font-size: 55px !important;
@@ -155,9 +165,30 @@ button:active{
 .bottom-frame{
   position: absolute;
   width: 100%;
-  bottom: -10px;
+}
+.bottom-frame{
+  bottom: -1px;
+  z-index: 2;
 }
 
+.top-frame{
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: -1px;
+}
+.flip{
+  transform: scaleX(-1);
+}
+.upside{
+  transform: scaleY(-1);
+}
+.flip-upside{
+  transform: scale(-1, -1);
+}
+.text-shadow{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /**Media Queries**/
 
 /* Large Devices*/
@@ -181,7 +212,7 @@ button:active{
     font-size: 30px !important;
   }
   h2{
-    font-size: 40px !important;
+    font-size: 20px !important;
   }
   h4{
     font-size: 55px !important;
