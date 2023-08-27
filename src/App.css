@@ -106,15 +106,16 @@ button{
 }
 
 /*Hyper Link Hover*/
-a{
+a, .link{
   transition: ease-in-out .2s;
 }
-a.pink:hover{
-  color: var(--orange);
+.link{
+  font-weight: bold;
 }
-.hyperlink{
-  border-bottom: 2px solid;
+.link:hover{
+  color: var(--orange) !important;
 }
+
 /*Button Styling (Change according to website)*/
 button{
   color: var(--off-white);
@@ -171,6 +172,22 @@ button:active{
 
 /* Smaller Devices*/
 @media only screen and (max-width: 991px){
+  
 
 }
 
+@media only screen and (max-width: 424px){
+  h1{
+    font-size: 30px !important;
+  }
+  h2{
+    font-size: 40px !important;
+  }
+  h4{
+    font-size: 55px !important;
+  }
+  p, a{
+    font-size: 20px !important;
+  }
+
+}

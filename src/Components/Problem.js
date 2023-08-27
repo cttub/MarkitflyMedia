@@ -3,48 +3,141 @@ import './Style/problem.css';
 import judge from '../Assets/Icons/Person-Check.svg';
 import thumb from '../Assets/Icons/Thumbs-Down.svg';
 import bubble from '../Assets/Icons/Bubble-X.svg';
+import branding from '../Assets/Icons/Moving/enhance.png';
+import increase from '../Assets/Icons/Moving/increase.png';
+import raise from '../Assets/Icons/Moving/Money.png';
+import arrow from '../Assets/Icons/arrow.svg';
 import Fade from 'react-reveal/Fade';
+import { InView } from 'react-intersection-observer'; // Import InView from the package
+
 class Problem extends Component {
-    state = {  } 
-    render() { 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            percentages: [
+                { value: 46, max: 57, text: "of people won’t recommend a business with a poorly designed website", icon: thumb },
+                { value: 65, max: 75, text: "customers will judge company’s credibility base on their website alone", icon: judge },
+                { value: 76, max: 88, text: "of users will less likely return to a website due to bad user experience", icon: bubble },
+            ],
+            animatePercentages: false,
+        };
+
+        this.animatePercentages = this.animatePercentages.bind(this);
+        this.handleIntersection = this.handleIntersection.bind(this);
+    }
+
+    componentDidMount() {
+        // Start animation if the section is initially in view
+        if (this.intersectionObserver && this.intersectionObserver.current) {
+            this.handleIntersection(this.intersectionObserver.current.inView);
+        }
+    }
+
+    animatePercentages() {
+        const interval = setInterval(() => {
+            let hasPendingUpdates = false;
+
+            const updatedPercentages = this.state.percentages.map(percentage => {
+                if (percentage.value < percentage.max) {
+                    hasPendingUpdates = true;
+                    return { ...percentage, value: percentage.value + 1 };
+                }
+                return percentage;
+            });
+
+            if (hasPendingUpdates) {
+                this.setState({ percentages: updatedPercentages });
+            } else {
+                clearInterval(interval);
+            }
+        }, 100); // Adjust the interval and step size as needed
+    }
+
+    handleIntersection(inView) {
+        if (inView && !this.state.animatePercentages) {
+            this.setState({ animatePercentages: true }, () => {
+                this.animatePercentages();
+            });
+        }
+    }
+
+    render() {
         return (
             <div id='problem'>
-
                 <section className='problem-statement'>
                     <div>
-                        <h1 className='black'>How Important is Online Presence?</h1>
-                        
-                        <div className='stats-container'>
-                            <Fade up duration = {1500}><div className='stats-box col-lg-3'>
-                                    <div>
-                                        <h4 className='primary-purple'>75%</h4>
-                                        <h5>customers will <strong>judge company’s credibility</strong> base on their website alone</h5>
+                        <h1 className='black'>How important is online presence?</h1>
+
+                        <InView
+                            as="div"
+                            onChange={this.handleIntersection}
+                            ref={this.intersectionObserver}
+                        >
+                            <div className='stats-container'>
+                                {this.state.percentages.map((percentage, index) => (
+                                    <div key={index} className='stats-box col-lg-3'>
+                                        <div>
+                                            <Fade up duration={900 + (500 * index)}>
+                                                <h4 className='primary-purple'>{this.state.animatePercentages ? percentage.value : 0}%</h4>
+                                            </Fade>
+                                            <h5>{percentage.text}</h5>
+                                        </div>
+                                        <div className='stats-circle'>
+                                            <img className='stats-img' src={percentage.icon} alt='' />
+                                        </div>
                                     </div>
-                                    <div className='stats-circle'><img className='stats-img' src={judge}/></div>
-                            </div></Fade>
-                            <Fade up duration = {2000}><div className='stats-box col-lg-3'>
-                                    <div>
-                                        <h4 className='primary-purple'>57%</h4>
-                                        <h5>of people <strong>won’t recommend</strong> a business with a <strong>poorly designed website</strong></h5>
-                                    </div>
-                                    <div className='stats-circle'><img className='stats-img' src={thumb}/></div>
-                            </div></Fade>
-                            <Fade up duration = {2500}> <div className='stats-box  col-lg-3'>
-                                    <div>
-                                        <h4 className='primary-purple'>88%</h4>
-                                        <h5>of users will <strong>less likely</strong> return to a website due to <strong>bad user experience</strong></h5>
-                                    </div>
-                                    <div className='stats-circle'><img className='stats-img' src={bubble}/></div>
-                            </div></Fade>
-                        </div>
+                                ))}
+                            </div>
+                        </InView>
+
+                        <p className='stat-resource text-center'>Statistics from <a href='https://www.forbes.com/advisor/business/software/website-statistics' target='_blank' className='hyperlink black'><b>Forbes</b></a> and <a href='https://www.sweor.com/firstimpressions' target='_blank' className='hyperlink black'><b>Sweor</b></a></p>
+                    </div>
+
+                    <p className='text-center d-none d-sm-block'>Challenges in website design, insufficient business analysis, and ineffective online advertisements hinder your <strong>ability to attract</strong> and <strong>engage their target audience</strong>, leading to lower <strong>customer acquisition</strong>, limited growth, and missed<strong> revenue opportunities.</strong></p>
+                    <a href='#solution-statement' className='text-center pink solution-link link'>See our Solutions</a>
+                </section>
+
+                <section id='solution-statement'>
+                    
+                    <div>
+                        <h1 className='text-center'>Our Solution</h1>
+
+                        <section className='diagram-container'>
+                            <div className='diagram-box'>
+                                <div>
+                                    <img src={branding} alt='Branding' />
+                                    <p className='primary-purple'><strong>Enhance your Branding</strong></p>
+                                    <h5 className='primary-purple'>Elevate your business with our standout design services, including graphic, logo, and web design.</h5>
+                                </div>
+                            </div>
+                            <img className='arrow first' src={arrow} alt='Arrow' />
+                            <div className='diagram-box'>
+                                <div>
+                                    <img src={increase} alt='Increase' />
+                                    <p className='primary-purple'><strong>Increase in Online Traffic</strong></p>
+                                    <h5 className='primary-purple'>Thrive your presence with our expertise in Google Analytics, and Web Development.</h5>
+                                </div>
+                            </div>
+                            <img className='arrow second' src={arrow} alt='Arrow' />
+                            <div className='diagram-box'>
+                                <div>
+                                    <img src={raise} alt='Raise' />
+                                    <p className='primary-purple'><strong>Raise Customer Value</strong></p>
+                                    <h5 className='primary-purple'>Discuss the pain points in your company so we can help problem-solve your way to success.</h5>
+                                </div>
+                            </div>
+                        </section>
+
+                        <p className='solution-paragraph text-center d-none d-sm-block'>Our marketing website offers comprehensive solutions in <strong>website design, business analysis,</strong> and <strong>online advertisement</strong> services. Businesses can access assistance to enhance their <strong>online presence, drive website traffic</strong>, and maximize <strong>marketing potential</strong>, all on a single platform.</p>
 
                     </div>
+
                 </section>
-                
 
             </div>
         );
     }
 }
- 
+
 export default Problem;

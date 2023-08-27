@@ -1,14 +1,13 @@
-.problem-statement{
-    height: 100vh;
+.problem-statement, .solution-statement{
    padding: 100px;
+   text-align: center;
 }
-.problem-statement > div > h1{
-    text-align: center;
+
+.stats-container, .diagram-container{
+    display: flex;
 }
 .stats-container{
-    display: flex;
     justify-content: space-between;
-   
 }
 .stats-box{
     position: relative;
@@ -49,9 +48,74 @@
 .stats-box > div{
     text-align: center;
 }
+.stat-resource{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px !important;
+}
+.stat-resource > a{
+    font-size: 20px !important;
+}
+
+#solution-statement{
+    margin-top: 100px;
+}
+.solution-paragraph{
+    margin: 50px;
+}
+.diagram-container{
+    margin-top: 36px;
+    justify-content: center;
+
+}
+.arrow{
+    width: 64px;
+    margin: 10px;
+}
+.arrow.second{
+    transform: scaleY(-1);
+}
+.diagram-box{
+    width: 27%;
+    border: var(--primary-purple) solid;
+    padding: 30px;
+    border-radius: 20px;
+}
+.diagram-box > div{
+    text-align: center;
+}
+.diagram-box > div > img{
+    width: 100px;
+}
+
 @media only screen and (max-width: 991px){
-    .stats-container{
+    .stats-container, .diagram-container{
         display: block;
     }
+    .stats-circle{
+        top: 0;
+        right: 0px;
+    }
+    .diagram-container{
+        padding: 0px 100px;
+    }
+    .diagram-box{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .arrow{
+        display: none;
+    }
+    
 
+}
+
+@media only screen and (max-width: 464px){
+    .problem-statement, .solution-statement{
+        padding: 200px 10px;
+    }
+    .diagram-container{
+        padding: 10px 10px;
+    }
+    
 }
