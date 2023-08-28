@@ -11,16 +11,15 @@ import Fade from 'react-reveal/Fade';
 import { InView } from 'react-intersection-observer'; // Import InView from the package
 import frame from '../Assets/Frames/Purple-1.png';
 
-
 class Problem extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             percentages: [
-                { value: 46, max: 57, text: "of people won’t recommend a business with a poorly designed website", icon: thumb },
-                { value: 65, max: 75, text: "customers will judge company’s credibility base on their website alone", icon: judge },
-                { value: 76, max: 88, text: "of users will less likely return to a website due to bad user experience", icon: bubble },
+                { value: 46, max: 57, text: "of people <strong>won’t recommend</strong> a business with a <strong>poorly designed website</strong>", icon: thumb },
+                { value: 65, max: 75, text: "customers will <strong>judge company’s credibility</strong> base on their website alone", icon: judge },
+                { value: 76, max: 88, text: "of users will <strong>less likely return</strong> to a website due to <strong>bad user experience</strong>", icon: bubble },
             ],
             animatePercentages: false,
         };
@@ -83,7 +82,7 @@ class Problem extends Component {
                                             <Fade up duration={900 + (500 * index)}>
                                                 <h4 className='primary-purple'>{this.state.animatePercentages ? percentage.value : 0}%</h4>
                                             </Fade>
-                                            <h5>{percentage.text}</h5>
+                                            <h5 dangerouslySetInnerHTML={{ __html: percentage.text }} />
                                         </div>
                                         <div className='stats-circle'>
                                             <img className='stats-img' src={percentage.icon} alt='' />

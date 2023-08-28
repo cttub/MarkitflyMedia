@@ -1,0 +1,57 @@
+#founder{
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+.founder-section > div{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.founder.info > .title{
+    font-size: 30px !important;
+}
+.founder.info > .graduate{
+    font-size: 20px !important;
+    float: right;
+}
+.pfp.christina{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 368px;
+    border: 4px solid #FFF;
+    background: url('../../Assets/Pfp/Christina.png'), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 992px){
+    .founder.info > .title{
+        font-size: 25px !important;
+    }
+    .founder-section > div{
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+    .founder.info > .graduate{
+        float: none;
+    }
+    .pfp.christina{
+        margin: auto;
+        height: 200px;
+         width: 200px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .founder.info > .title{
+        font-size: 20px !important;
+    }
+    .pfp.christina{
+        height: 150px;
+         width: 150px;
+    }
+ 
+}

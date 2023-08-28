@@ -75,7 +75,7 @@ class Reviews extends Component {
                     </div>
                 </section>
                 <div className='review-btn'><button onClick={this.redirectToReviews}>See more Reviews</button></div>
-                
+              
             </div>
         );
     }

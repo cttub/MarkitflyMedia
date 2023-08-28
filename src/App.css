@@ -71,7 +71,9 @@ body{
 .brock-regular{
   font-family: 'Brock Regular' !important;
 }
-
+.brock-italic{
+  font-family: 'Brock Italic' !important;
+}
 .brock-semibold-italic{
   font-family: 'Brock SemiBold Italic' !important;
 }

@@ -9,6 +9,7 @@ import Problem from './Components/Problem';
 import Benefits from './Components/Benefits';
 import Tools from './Components/Tools';
 import Reviews from './Components/Reviews';
+import Founder from './Components/Founder';
 
 import purple2 from './Assets/Frames/Purple-2.png';
 import purple1 from './Assets/Frames/Purple-1.png';
@@ -23,12 +24,15 @@ function App() {
         <section id='landing-section' className='position-relative'>
             <Landing/>  
         </section>
+
         <section id='problem-section' className='position-relative'>
           <Problem/>
         </section>
+
         <section id='benefits-section' className='position-relative'>
           <Benefits/>
         </section>
+
         <section id='tools-section' className='position-relative'>
           <img className='top-frame' src={purple2}/>
           <Tools/>
@@ -36,8 +40,12 @@ function App() {
         </section>
 
         <section id='review-section' className='position-relative'>
-          
           <Reviews/>
+        </section>
+        
+        <section id='founder-section' className='position-relative'>
+         <img className='top-frame' src={purple2}/>
+          <Founder/>
         </section>
 
       </header>
