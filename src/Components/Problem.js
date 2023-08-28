@@ -95,7 +95,7 @@ class Problem extends Component {
                         <p className='stat-resource text-center'>Statistics from <a href='https://www.forbes.com/advisor/business/software/website-statistics' target='_blank' className='hyperlink black'><b>Forbes</b></a> and <a href='https://www.sweor.com/firstimpressions' target='_blank' className='hyperlink black'><b>Sweor</b></a></p>
                     </div>
 
-                    <p className='text-center d-none d-sm-block'>Challenges in website design, insufficient business analysis, and ineffective online advertisements hinder your <strong>ability to attract</strong> and <strong>engage their target audience</strong>, leading to lower <strong>customer acquisition</strong>, limited growth, and missed<strong> revenue opportunities.</strong></p>
+                    <p className='col-lg-7 margin-auto text-center d-none d-sm-block'>Challenges in website design, insufficient business analysis, and ineffective online advertisements hinder your <strong>ability to attract</strong> and <strong>engage their target audience</strong>, leading to lower <strong>customer acquisition</strong>, limited growth, and missed<strong> revenue opportunities.</strong></p>
                   
                 </section>
 
@@ -130,9 +130,10 @@ class Problem extends Component {
                             </div>
                         </section>
 
-                        <p className='solution-paragraph text-center d-none d-sm-block'>Our marketing website offers comprehensive solutions in <strong>website design, business analysis,</strong> and <strong>online advertisement</strong> services. Businesses can access assistance to enhance their <strong>online presence, drive website traffic</strong>, and maximize <strong>marketing potential</strong>, all on a single platform.</p>
-
+                       
                     </div>
+                    <p className='col-lg-7 margin-auto solution-paragraph text-center d-none d-sm-block'>Our marketing website offers comprehensive solutions in <strong>website design, business analysis,</strong> and <strong>online advertisement</strong> services. Businesses can access assistance to enhance their <strong>online presence, drive website traffic</strong>, and maximize <strong>marketing potential</strong>, all on a single platform.</p>
+
 
                 </section>
                 <img className='bottom-frame' src={frame} />
