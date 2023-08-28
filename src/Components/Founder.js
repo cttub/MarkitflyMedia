@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './Style/founder.css';
 import Fade from 'react-reveal/Fade';
 import award from '../Assets/Icons/Award.svg';
+import frame from '../Assets/Frames/Purple-2.png';
 class Founder extends Component {
     state = {  } 
     render() { 
         return (
+         
             <div id='founder'>
                     <h1 className='text-center'>Co-Founder's Note</h1>
                     <section className='founder-section'>
@@ -18,8 +20,10 @@ class Founder extends Component {
                             </div>
                         </div>
                     </section>
-
+                    
             </div>
+            
+           
 
         );
     }

@@ -10,6 +10,7 @@ import Benefits from './Components/Benefits';
 import Tools from './Components/Tools';
 import Reviews from './Components/Reviews';
 import Founder from './Components/Founder';
+import Work from './Components/Work';
 
 import purple2 from './Assets/Frames/Purple-2.png';
 import purple1 from './Assets/Frames/Purple-1.png';
@@ -46,6 +47,12 @@ function App() {
         <section id='founder-section' className='position-relative'>
          <img className='top-frame' src={purple2}/>
           <Founder/>
+          <img className='bottom-frame flip' src={purple1}/>
+        </section>
+
+        <section id='work-section' className='position-relative'>
+   
+          <Work/>
         </section>
 
       </header>

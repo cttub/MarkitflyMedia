@@ -40,7 +40,7 @@
 .review.card > .company{
     border-bottom: 2px solid var(--primary-purple);
 }
-.review-btn{
+.review-btn, .cta-btn{
     display: flex;
     justify-content: center;
     padding: 20px 0px;
