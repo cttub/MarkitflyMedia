@@ -8,7 +8,6 @@
 }
 
 #solution-statement{
-    
     padding-bottom: 300px;
 }
 .stats-container, .diagram-container{
@@ -110,6 +109,9 @@
     }
     .arrow{
         display: none;
+    }
+    .solution-paragraph{
+        margin: 50px 20px;
     }
     
 
