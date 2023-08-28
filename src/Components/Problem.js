@@ -125,7 +125,7 @@ class Problem extends Component {
                                 <div>
                                     <img src={raise} alt='Raise' />
                                     <p className='primary-purple'><strong>Raise Customer Value</strong></p>
-                                    <h5 className='primary-purple'>Discuss the pain points in your company so we can help problem-solve your way to success.</h5>
+                                    <h5 className='primary-purple'>Discuss the strategies to maximize the lifetime value of your clients.</h5>
                                 </div>
                             </div>
                         </section>
