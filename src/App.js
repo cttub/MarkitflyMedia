@@ -11,6 +11,8 @@ import Tools from './Components/Tools';
 import Reviews from './Components/Reviews';
 import Founder from './Components/Founder';
 import Work from './Components/Work';
+import Price from './Components/Price';
+import FAQ from './Components/FAQ';
 
 import purple2 from './Assets/Frames/Purple-2.png';
 import purple1 from './Assets/Frames/Purple-1.png';
@@ -51,8 +53,15 @@ function App() {
         </section>
 
         <section id='work-section' className='position-relative'>
-   
           <Work/>
+        </section>
+
+        <section id='price-section' className='position-relative'>
+          <Price/>
+        </section>
+
+        <section id='faq-section' className='position-relative'>
+          <FAQ/>
         </section>
 
       </header>
