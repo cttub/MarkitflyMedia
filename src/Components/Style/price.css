@@ -1,6 +1,10 @@
 #price{
     padding: 100px;
 }
+#pricing-anchor{
+     top: 0px;
+  
+}
 .price-container{
     margin-top: 50px;
     display: flex;

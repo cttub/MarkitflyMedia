@@ -9,6 +9,9 @@
     padding-top: 350px;
     align-items: center;
 }
+#tools-anchor{
+    top: 220px;
+}
 .information{
     padding: 100px 200px;
 }
@@ -75,8 +78,9 @@
 
     }
     #tools > section{
-       
         padding-top: 55px;
-   
+    }
+    #tools-anchor{
+        top: 0;
     }
 }

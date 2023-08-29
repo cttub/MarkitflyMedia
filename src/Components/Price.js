@@ -21,6 +21,7 @@ class Price extends Component {
     render() { 
         return (
             <div id='price'>
+                <div id='pricing-anchor' className='anchors'></div>
                 <h1 className='primary-purple text-center'>Pricing</h1>
 
                 <section className='price-container'>
