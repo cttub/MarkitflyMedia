@@ -62,24 +62,32 @@
     background-position: center;
     background-size: cover;
 }
-
-@media only screen and (max-width: 1095px){
+@media only screen and (max-width: 1442px){
     .work-img-container{
         display: block;
     }
     .work-img{
+        margin: auto;
         width: 60%;
+        height: 600px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 1095px){
+    .work-img{
+        width: 80%;
         margin: auto;
         margin-bottom: 30px;
+    }
+    .click-website{
+        display: block;
     }
 
 }
 
 @media only screen and (max-width: 1418px){
     #work{
-
         padding-bottom: 300px;
-        
     }
 
 }
