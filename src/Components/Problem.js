@@ -17,9 +17,9 @@ class Problem extends Component {
 
         this.state = {
             percentages: [
-                { value: 46, max: 57, text: "of people <strong>won’t recommend</strong> a business with a <strong>poorly designed website</strong>", icon: thumb },
-                { value: 65, max: 75, text: "customers will <strong>judge company’s credibility</strong> base on their website alone", icon: judge },
-                { value: 76, max: 88, text: "of users will <strong>less likely return</strong> to a website due to <strong>bad user experience</strong>", icon: bubble },
+                { value: 40, max: 57, text: "of people <strong>won’t recommend</strong> a business with a <strong>poorly designed website</strong>", icon: thumb },
+                { value: 55, max: 75, text: "customers will <strong>judge company’s credibility</strong> base on their website alone", icon: judge },
+                { value: 66, max: 88, text: "of users will <strong>less likely return</strong> to a website due to <strong>bad user experience</strong>", icon: bubble },
             ],
             animatePercentages: false,
         };
