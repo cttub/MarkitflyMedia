@@ -68,7 +68,9 @@ class FAQ extends Component {
 
         return (
             <div id='faq'>
+                
                 <div className='frame'><img className='flip upside' src={topFrame} alt="Top Frame" /></div>
+                <div id='faq-anchor' className='anchors'></div>
                 <section>
                     <h1 className='off-white text-center'>Frequently Asked Questions</h1>
                     <div className='faq-list'>

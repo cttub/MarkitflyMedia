@@ -1,0 +1,81 @@
+#consult{
+    height: 100vh;
+    padding-top: 400px;
+}
+#consult > section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+#consult > section > .inline-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.calendly{
+    border: solid var(--pink);
+}
+.calendly-inline-widget{
+    position: relative;  
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.consult-info > div > .consult-img{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    background: url('../../Assets/Stock/Consult.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%; 
+    border: 4px solid var(--primary-purple);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.email-txt-small{
+    display: none;
+}
+@media only screen and (max-width: 1148px){
+
+    .consult-info > div > .consult-img{
+        display: none;
+    }
+    #consult{
+        height: auto;
+        padding-top: 200px;
+    }
+    #consult > section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #consult > section > .inline-widget, .consult-info, .email-txt-small{
+        margin: auto;
+        width: 60%;
+    }
+    .email-txt-small{
+        display: block;
+        margin-top: 20px;
+    }
+    .email-txt{
+        display: none;
+    }
+    .consult-info > div > h1{
+       font-size: 30px !important;
+    
+    }
+}
+@media only screen and (max-width: 585px){
+    #consult > section > .inline-widget, .consult-info, .email-txt-small{
+        margin: auto;
+        width: 80%;
+    }
+    .email-txt-small{
+      
+        margin-top: 40px;
+    }
+
+}

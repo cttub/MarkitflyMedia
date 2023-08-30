@@ -10,6 +10,7 @@ import empty2 from '../Assets/Icons/Checks/secondary-empty.svg';
 import check3 from '../Assets/Icons/Checks/third-check.svg';
 import empty3 from '../Assets/Icons/Checks/third-empty.svg';
 
+import Fade from 'react-reveal/Fade';
 class Price extends Component {
     scrollToConsultation = () => {
         const consultAnchor = document.getElementById('consult-anchor');
@@ -23,22 +24,23 @@ class Price extends Component {
             <div id='price'>
                 <div id='pricing-anchor' className='anchors'></div>
                 <h1 className='primary-purple text-center'>Pricing</h1>
+                <Fade up><p className='text-center orange'><b>We build your Google Business Profile for <u>FREE!</u></b></p></Fade>
 
                 <section className='price-container'>
 
                     <div className='price-box col-lg-3 position-relative'>
-                        <p className='title off-white primary'>Build My Presence</p>
-                        <p className='primary-purple price text-center'>$2,579 + $250/month</p>
+                        <p className='title off-white primary'>Manage My Profile</p>
+                        <p className='secondary-purple price text-center'> <span className='flat-fee'>No flat fee</span> <br></br>$300<span className='flat-fee'>/month</span></p>
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
-                            <li><img src={check1}/> Manage Online Ads</li>
-                            <li><img src={check1}/> Monthly Consultations</li>
-                            <li><img src={check1}/> Website Design</li>
-                            <li className='not-benefit'><img src={empty1}/> Website Development</li>
-                            <li className='not-benefit'><img src={empty1}/> Website Hosting / Testing</li> 
-                            <li className='not-benefit'><img src={empty1}/> Unlimited Requests</li> 
-                            <li className='not-benefit'><img src={empty1}/> Unlimited Consultations</li>              
+                            <li><img src={check1}/> Manage Google Profile</li>
+                            <li><img src={check1}/> Reply to Reviews</li>
+                            <li><img src={check1}/> Keep content updated weekly</li>
+                            <li><img src={check1}/> Review Website Performance</li>
+                            <li><img src={check1}/> Monthly Reports</li>
+                            
+                                 
                         </ul>
                     </div>
                         <div style={{display: "flex", padding: "14px"}}><button onClick={this.scrollToConsultation} className='primary-p-btn margin-auto get-started'>Get Started</button></div>
@@ -48,26 +50,27 @@ class Price extends Component {
                     <div className='price-box col-lg-3 position-relative'>
                         <p className='price-tag off-white box-shadow'>Most Popular!</p>
                         <p className='title off-white secondary'>Start from Scratch</p>
-                        <p className='secondary-purple price text-center'>$4,879 + $300/month</p>
+                        <p className='secondary-purple price text-center'>$4,879<span className='flat-fee'>/flat fee</span> <br></br>$300<span className='flat-fee'>/month</span></p>
+                        
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
-                            <li><img src={check2}/> Manage Online Ads</li>
-                            <li><img src={check2}/> Monthly Consultations</li>
+
+                            <li><img src={check2}/> Local SEO</li>
+                            <li><img src={check2}/> Google Advertisement</li>
                             <li><img src={check2}/> Website Design</li>
-                            <li><img src={check2}/> Website Development</li>
-                            <li><img src={check2}/> Website Hosting / Testing</li> 
-                            <li className='not-benefit'><img src={empty2}/> Unlimited Requests</li> 
-                            <li className='not-benefit'><img src={empty2}/> Unlimited Consultations</li>              
+                            <li><img src={check2}/> Website Development</li> 
+                                   
                         </ul>
                         </div>
+                        <p className='includes text-center'>Also includes everything in lower priced packages</p>
                         <div style={{display: "flex", padding: "14px"}}><button onClick={this.scrollToConsultation} className='secondary-p-btn margin-auto get-started'>Get Started</button></div>
 
                     </div>
 
                     <div className='price-box col-lg-3 position-relative'>
                         <p className='title off-white third'>Grow my Numbers</p>
-                        <p className='secondary-purple price text-center'>$5,079 + $450/month</p>
+                        <p className='secondary-purple price text-center'>$4,879<span className='flat-fee'>/flat fee</span> <br></br>$300<span className='flat-fee'>/month</span></p>
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>

@@ -13,6 +13,8 @@ import Founder from './Components/Founder';
 import Work from './Components/Work';
 import Price from './Components/Price';
 import FAQ from './Components/FAQ';
+import Consult from './Components/Consult';
+
 
 import purple2 from './Assets/Frames/Purple-2.png';
 import purple1 from './Assets/Frames/Purple-1.png';
@@ -56,13 +58,21 @@ function App() {
           <Work/>
         </section>
 
-        <section id='price-section' className='position-relative'>
+        <section id='price    -section' className='position-relative'>
           <Price/>
         </section>
 
         <section id='faq-section' className='position-relative'>
           <FAQ/>
         </section>
+
+        <section id='consult-section' className='position-relative'>
+          <img className='top-frame' src={purple2}/>
+          <Consult/>
+        </section>
+
+        
+
 
       </header>
     </div>

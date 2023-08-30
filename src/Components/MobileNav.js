@@ -51,7 +51,7 @@ const MobileNav = () => {
             <a href="#faq-anchor" onClick={handleNavLinkClick}>
               FAQ
             </a>
-            <a href="#" onClick={handleNavLinkClick}>
+            <a href="#consult-anchor" onClick={handleNavLinkClick}>
               Free Consultation
             </a>
             <div className="close-button" onClick={closeMenu}>

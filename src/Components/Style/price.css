@@ -38,11 +38,23 @@
 .not-benefit{
     opacity: 30%;
 }
+.includes{
+    font-size: 15px !important;
+    width: 70%;
+    margin: auto;
+}
 .price-box > .price{
     font-weight: bold;
     font-size: 30px !important;
 }
+.flat-fee{
+    font-size: 20px;
+}
+.includes{
+    font-size: 10px;
+}
 .benefit-list{
+    height: 300px;
     padding: 0px;
     font-size: 20px !important;
     padding-bottom: 20px;
@@ -89,6 +101,10 @@
         display: flex;
         justify-content: center;
     }
+    .benefit-list{
+        height: auto;
+      
+    }
 }
 @media only screen and (max-width: 778px){
     .price-box{
@@ -105,5 +121,6 @@
     }
 }
 @media only screen and (max-width: 541px){
+  
     
 }

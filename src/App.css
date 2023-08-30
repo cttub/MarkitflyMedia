@@ -9,6 +9,7 @@
   --secondary-orange: #FF5A12;
   --pink: #FF0E73;
   --off-white: #FDFBFA;
+  --linear-purple: linear-gradient(136deg, #6D5BE0 0%, #FF0E73 100%);
 }
 body{
   overflow-x: hidden;
@@ -104,7 +105,7 @@ h4{
 
 
 /*Main Text*/
-p, a,button{
+p, a,button, .calendly-badge-content{
   font-family: 'Brock Regular' !important;
 
 }
@@ -145,7 +146,24 @@ button:hover{
 button:active{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
-
+.calendly-badge-content{
+  color: var(--off-white) !important;
+  font-size: 23px !important;
+  border: none !important;
+  padding: 10px 40px !important;
+  border-radius: 45.5px !important;
+  background: var(--orange) !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important; 
+  transition: ease-in-out .2s !important;
+}
+.calendly-badge-content:active{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset !important;
+}
+.calendly-badge-content:hover{
+  background-color: var(--secondary-orange) !important;
+  color: white !important;
+  
+}
 /*Box Shadow*/
 .box-shadow{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
@@ -230,4 +248,7 @@ button:active{
 }
 .margin-auto{
   margin: auto;
+}
+@media only screen and (max-width: 585px){
+
 }

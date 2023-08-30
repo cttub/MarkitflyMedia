@@ -1,6 +1,10 @@
 #faq{
     background-color: var(--primary-purple);
 }
+#faq-anchor{
+    width: 100vw;
+    
+}
 #faq > .frame{
     transform: translateY(-1px);
 }
