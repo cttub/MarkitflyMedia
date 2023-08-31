@@ -9,8 +9,10 @@ class Consult extends Component {
     render() { 
         return (
             <div id='consult'>
+                
                 <div id='consult-anchor' className='anchors'></div>
                 <section>
+                    
                     <p className='text-center email-txt-small'><b>Not ready to meet?</b><br></br> Email Us at <span><a className='orange' href='mailto:contact@markitfly.com'>contact@markitfly.com</a></span> instead!</p>
                     <div className="inline-widget col-lg-5">
             

@@ -57,12 +57,7 @@ class FAQ extends Component {
                     "We do not offer refunds due to the high quality value of our work.",
                 ],
             },
-            {
-                question: "Can I pause my subscription whenever I want?",
-                answer: [
-                    "You always have the option to temporarily pause your subscription, but it is important to note that certain services may be deactivated during this period such as: website hosting, advertisement, consultations, etc",
-                ],
-            },
+           
             
         ];
 

@@ -24,7 +24,9 @@ class Price extends Component {
             <div id='price'>
                 <div id='pricing-anchor' className='anchors'></div>
                 <h1 className='primary-purple text-center'>Pricing</h1>
-                <Fade up><p className='text-center orange'><b>We build your Google Business Profile for <u>FREE!</u></b></p></Fade>
+                <Fade up><p className='text-center orange'><b>We build your Google Business Profile for <u>FREE</u> with all packages.</b></p></Fade>
+              
+            
 
                 <section className='price-container'>
 
@@ -63,9 +65,9 @@ class Price extends Component {
                                    
                         </ul>
                         </div>
-                        <p className='includes text-center'>Also includes everything in lower priced packages</p>
+                        
                         <div style={{display: "flex", padding: "14px"}}><button onClick={this.scrollToConsultation} className='secondary-p-btn margin-auto get-started'>Get Started</button></div>
-
+                        <p className='includes text-center'>Also includes everything in lower priced packages</p>
                     </div>
 
                     <div className='price-box col-lg-3 position-relative'>
@@ -83,8 +85,9 @@ class Price extends Component {
                             <li><img src={check2}/> Unlimited Consultations</li>              
                         </ul>
                     </div>
+                        
                         <div style={{display: "flex", padding: "14px"}}><button onClick={this.scrollToConsultation} className='third-p-btn margin-auto get-started'>Get Started</button></div>
-
+                        <p className='includes text-center'>Also includes everything in lower priced packages</p>
                     </div>
 
              

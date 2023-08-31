@@ -1,4 +1,37 @@
 #footer{
     background: var(--primary-purple);
-    padding: 30px 10px;
+    padding: 30px 20px;
+}
+#footer > section{
+   display: flex;
+   align-items: center;
+}
+#footer > section > div{
+    margin-right: 100px;
+ }
+.footer-link{
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+.footer-link:hover{
+    text-decoration: underline;
+
+}
+
+@media only screen and (max-width: 1371px) {
+    .ff-title{
+       font-size: 20px !important;
+       font-weight: bold !important;
+   }
+   .ff-form .ff-description p{
+       font-size: 12px !important;
+   }
+   
+}
+
+@media only screen and (max-width: 1371px) {
+    #footer > section{
+        display: block;
+        
+     }
 }
