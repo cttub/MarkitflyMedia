@@ -122,6 +122,17 @@
     
  }
  @media only screen and (max-width:767px) {
+    #landing > section > div > .logo{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    #landing > section > div > .headline{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--off-white);
+    }
+
     .newsletter{
         padding: 10px;
     }

@@ -124,6 +124,9 @@
         padding: 20px;
         width: 30%;
     }
+    .diagram-box > div > img{
+        width: 50px;
+    }
     
 
 }

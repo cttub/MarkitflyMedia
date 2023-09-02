@@ -24,7 +24,7 @@ const MobileNav = () => {
     <div className="mobile-nav">
       {!isOpen ? (
         <div className="hamburger" onClick={toggleMenu}>
-          <img width="36px" src={hamburger} alt="Open Menu" />
+          <img width="20px" src={hamburger} alt="Open Menu" />
         </div>
       ) : (
         <div></div>
@@ -55,7 +55,7 @@ const MobileNav = () => {
               Free Consultation
             </a>
             <div className="close-button" onClick={closeMenu}>
-              <img width="40px" src={closeIcon} alt="Close Menu" />
+              <img width="20px" src={closeIcon} alt="Close Menu" />
             </div>
           </div>
         </Fade>
