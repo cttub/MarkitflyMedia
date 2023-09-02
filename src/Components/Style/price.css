@@ -110,6 +110,9 @@
         height: auto;
       
     }
+    #price > p > b{
+        padding: 0px 10px;
+    }
 }
 @media only screen and (max-width: 778px){
     .price-box{
