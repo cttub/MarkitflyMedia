@@ -49,13 +49,22 @@
     left: 0;
 }
 @media only screen and (max-width: 1371px){
+    .service > h3{
+        font-size: 20px !important;
+    }
     .service {
         display: block;
-        width: 100%;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+        
     }
     .information{
         display: flex;
         justify-content: center;
+    }
+    .cogs{
+        opacity: 40%;
     }
 }
 @media only screen and (max-width: 1370px){
@@ -70,9 +79,6 @@
     }
 }
 @media only screen and (max-width: 735px){
-    .cogs{
-        opacity: 40%;
-    }
     #tools{
         padding-bottom: 40px;
 

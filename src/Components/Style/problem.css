@@ -91,11 +91,13 @@
 .diagram-box > div > img{
     width: 100px;
 }
-
+#problem > section.problem-statement > p{
+    width: 80%;
+}
 @media only screen and (max-width: 991px){
-    .stats-container, .diagram-container{
-        display: block;
-    }
+   .diagram-box{
+    margin: 10px;
+   }
     .stats-circle{
         top: 0;
         right: 0px;
@@ -113,10 +115,27 @@
     .solution-paragraph{
         margin: 50px 20px;
     }
+    .stats-circle{
+        border: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .stats-box{
+        padding: 20px;
+        width: 30%;
+    }
     
 
 }
+@media only screen and (max-width: 655px){
+    .diagram-container, .stats-container{
+        display: block;
+    }
+    .stats-box{
+        width: 90%;
+    }
 
+}
 @media only screen and (max-width: 464px){
     .problem-statement{
         padding: 200px 10px;
@@ -124,6 +143,14 @@
     .diagram-container{
         padding: 10px 10px;
     } 
+    .problem-statement{
+        padding: 100px 10px;
+        text-align: center;
+        margin-bottom: 100px;
+     }
+     .diagram-box{
+        margin: 10px 0px;
+     }
 }
 @media only screen and (max-width: 242px){
   .stats-circle{

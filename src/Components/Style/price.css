@@ -94,25 +94,54 @@
 }
 
 @media only screen and (max-width: 1442px){
-    .price-container{
-        display: block;
-    }
     .price-box{
         margin: auto;
-        margin-bottom: 40px;
-        width: 60%;
+        margin-right: 10px;
+        width: 40%;
     }
     .list-container{
         display: flex;
         justify-content: center;
     }
     .benefit-list{
-        height: auto;
+      height: 350px;
       
     }
     #price > p > b{
         padding: 0px 10px;
     }
+    .price-box > .title{
+        font-size: 20px !important;
+    }
+    .price-box > .price{
+        font-size: 20px !important;
+    }
+    .benefit-list > li{
+        font-size: 15px !important;
+    }
+    .benefit-list > li > img{
+        width: 20px;
+    }
+    .get-started{
+        font-size: 20px !important;
+        padding: 15px 30px !important;
+    }
+}
+@media only screen and (max-width: 943px){
+    .price-container{
+        display: block;
+        margin: auto;
+    }
+    .price-box{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+    .benefit-list{
+        height: auto;
+    }
+
 }
 @media only screen and (max-width: 778px){
     .price-box{
