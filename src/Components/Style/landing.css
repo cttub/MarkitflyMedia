@@ -15,6 +15,7 @@
 }
 #landing > section > div > .logo{
     width: 300px;
+    margin-bottom: 10px;
 }
 @media only screen and (max-width: 464px){
     #landing > section > div > .logo{
@@ -117,7 +118,6 @@
 @media only screen and (max-width: 354px) {
     .ff-secfields {
         width: 45%;
-    
     }
     
  }

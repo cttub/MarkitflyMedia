@@ -30,64 +30,68 @@ class Price extends Component {
 
                 <section className='price-container'>
 
-                    <div className='price-box col-lg-3 position-relative'>
+                    <div className='price-box position-relative'>
                         <p className='title off-white primary'>Manage My Profile</p>
-                        <p className='secondary-purple price text-center'> <span className='flat-fee'>No flat fee</span> <br></br>$300<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$1,750<span className='flat-fee'>/setup fee</span> <br></br>$500<span className='flat-fee'>/month</span></p>
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
-                            <li><img src={check1}/> Manage Google Profile</li>
-                            <li><img src={check1}/> Reply to Reviews</li>
-                            <li><img src={check1}/> Keep content updated weekly</li>
-                            <li><img src={check1}/> Review Website Performance</li>
-                            <li><img src={check1}/> Monthly Reports</li>
+                            <li><img src={check1}/> Local SEO</li>
+                            <li><img src={check1}/> Google Search Ads</li>
+                            <li><img src={check1}/> Paid Traffic</li>
+                           
                             
                                  
                         </ul>
-                    </div>
+                    </div> 
                         <div style={{display: "flex", padding: "14px"}}><button onClick={this.scrollToConsultation} className='primary-p-btn margin-auto get-started'>Get Started</button></div>
-
+                        <p className='includes text-center'>Additional fees may apply for certain advertisement campaigns.</p>
                     </div>
 
-                    <div className='price-box col-lg-3 position-relative'>
+                    <div className='price-box position-relative'>
                         <p className='price-tag off-white box-shadow'>Most Popular!</p>
                         <p className='title off-white secondary'>Start from Scratch</p>
-                        <p className='secondary-purple price text-center'>$4,879<span className='flat-fee'>/flat fee</span> <br></br>$300<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$3,750<span className='flat-fee'>/setup fee</span> <br></br>$850<span className='flat-fee'>/month</span></p>
                         
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
 
-                            <li><img src={check2}/> Local SEO</li>
-                            <li><img src={check2}/> Google Advertisement</li>
-                            <li><img src={check2}/> Website Design</li>
-                            <li><img src={check2}/> Website Development</li> 
+                            <li><img src={check1}/> Local SEO</li>
+                            <li><img src={check1}/> Google Search Ads</li>
+                            <li><img src={check1}/> Paid Traffic</li>
+                            <li><img src={check1}/> Website Design + Development</li>
+                            <li><img src={check1}/> Website Hosting + Maintenance</li>
+                            <li><img src={check1}/> Monthly Meetings</li>
+                           
                                    
                         </ul>
                         </div>
                         
                         <div style={{display: "flex", padding: "14px"}}><button onClick={this.scrollToConsultation} className='secondary-p-btn margin-auto get-started'>Get Started</button></div>
-                        <p className='includes text-center'>Also includes everything in lower priced packages</p>
+                        <p className='includes text-center'>Additional fees may apply for certain advertisement campaigns.</p>
                     </div>
 
-                    <div className='price-box col-lg-3 position-relative'>
+                    <div className='price-box position-relative'>
                         <p className='title off-white third'>Grow my Numbers</p>
-                        <p className='secondary-purple price text-center'>$4,879<span className='flat-fee'>/flat fee</span> <br></br>$300<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$3,750<span className='flat-fee'>/setup fee</span> <br></br>$1,250<span className='flat-fee'>/month</span></p>
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
-                            <li><img src={check2}/> Manage Online Ads</li>
-                            <li><img src={check2}/> Monthly Consultations</li>
-                            <li><img src={check2}/> Website Design</li>
-                            <li><img src={check2}/> Website Development</li>
-                            <li><img src={check2}/> Website Hosting / Testing</li> 
-                            <li><img src={check2}/> Unlimited Requests</li> 
-                            <li><img src={check2}/> Unlimited Consultations</li>              
+                        <li><img src={check1}/> Local SEO</li>
+                            <li><img src={check1}/> Google Search Ads</li>
+                            <li><img src={check1}/> Paid Traffic</li>
+                            <li><img src={check1}/> Website Design + Development</li>
+                            <li><img src={check1}/> Website Hosting + Maintenance</li>
+                            <li><img src={check1}/> Monthly Meetings</li>
+                            <li><img src={check1}/> Website Optimization & Testing</li>
+                            <li><img src={check2}/> Unlimited Requests / Changes</li> 
+                            <li><img src={check2}/> Unlimited Meetings</li>              
                         </ul>
                     </div>
                         
                         <div style={{display: "flex", padding: "14px"}}><button onClick={this.scrollToConsultation} className='third-p-btn margin-auto get-started'>Get Started</button></div>
-                        <p className='includes text-center'>Also includes everything in lower priced packages</p>
+                        <p className='includes text-center'>Additional fees may apply for certain advertisement campaigns.</p>
                     </div>
 
              

@@ -23,7 +23,7 @@ class Work extends Component {
                     </section>
                     <h3 className='text-center off-white'>Curious about your future website?</h3>
                     <h4 className='text-center off-white'>We offer Web Design Mockups!</h4>
-                    <div className='cta-btn'><button className='margin-auto'>Schedule a FREE Consultation</button></div>
+                    <div className='cta-btn'><button className='margin-auto'>Schedule a <u>FREE</u> Consultation</button></div>
                 </div>
                 <img className='bottom-frame' src={frame}/>
                 
