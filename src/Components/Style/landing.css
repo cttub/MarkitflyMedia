@@ -109,11 +109,9 @@
     border-radius: 50%;
 }
 .hidden{
-    display: none;
+    display: none !important;
 }
-.show{
-    display: block;
-}
+
 
 @media only screen and (max-width: 354px) {
     .ff-secfields {
@@ -139,7 +137,6 @@
  }
  
  @media only screen and (max-width:557px) {
-  
     .newsletter-icon > img{
         width: 30px;
 

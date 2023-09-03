@@ -15,6 +15,8 @@ import Price from './Components/Price';
 import FAQ from './Components/FAQ';
 import Consult from './Components/Consult';
 
+import Terms from './Components/Terms';
+import Privacy from './Components/Privacy';
 
 import purple2 from './Assets/Frames/Purple-2.png';
 import purple1 from './Assets/Frames/Purple-1.png';
@@ -22,6 +24,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Terms/>
+        <Privacy/>  
         <Nav/>
         <MobileNav/>
 

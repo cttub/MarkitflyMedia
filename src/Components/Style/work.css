@@ -93,7 +93,18 @@
 }
 
 
+@media only screen and (max-width: 482px){
+    .work-img{
+        height: 250px;
+    }
 
+}
+@media only screen and (max-width: 330px){
+    .work-img{
+        height: 200px;
+    }
+
+}
 
 .popup-overlay {
     position: fixed;
