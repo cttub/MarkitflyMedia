@@ -15,8 +15,8 @@ class Tools extends Component {
 
     render() {
         const services = [
-            'SEO', 'Online Advertisement', 'Google Ads',
-            'Graphic Design', 'Business Analysis', 'Business Consulting',
+            'SEO', 'Online Ads', 'Google Ads',
+            'Graphic Design', 'Business Analysis', 'Consultations',
             'Web Design', 'Web Development', 'A/B Testing'
         ];
 
