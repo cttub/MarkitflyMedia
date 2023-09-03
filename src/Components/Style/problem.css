@@ -130,7 +130,7 @@
     
 
 }
-@media only screen and (max-width: 655px){
+@media only screen and (max-width: 773px){
     .diagram-container, .stats-container{
         display: block;
     }
@@ -152,7 +152,7 @@
         padding: 100px 10px;
         text-align: center;
         margin-bottom: 100px;
-     }
+    }
      .diagram-box{
         margin: 10px 0px;
      }
