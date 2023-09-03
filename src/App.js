@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; //Install Bootstrap (yarn add bootstrap)
+import Fade from 'react-reveal/Fade';
 
 import Nav from './Components/Nav';
 import MobileNav from './Components/MobileNav';

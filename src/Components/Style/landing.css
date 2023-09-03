@@ -120,6 +120,12 @@
     
  }
  @media only screen and (max-width:767px) {
+    #landing {
+        background: linear-gradient(131deg, rgba(109, 91, 224, 0.87) 30.21%, rgba(109, 91, 224, 0.00) 100%), url('../../Assets/Stock/Heading.png'), lightgray -0.202px 0px / 100.021% 100.781% no-repeat;
+        background-position: center; 
+        background-size: cover;
+        background-attachment: scroll;
+    }
     #landing > section > div > .logo{
         position: absolute;
         top: 10px;

@@ -31,13 +31,17 @@
     .founder.info > .title{
         font-size: 25px !important;
     }
+    #founder > section > div > div.founder.info.col-lg-8 > p.pink.title.brock-italic{
+        margin-top: 10px;
+    }
     .founder-section > div{
+        padding: 30px;
         margin-top: 20px;
         display: block;
         text-align: center;
     }
     .founder.info > .graduate{
-        float: none;
+        display: none;
     }
     .pfp.christina{
         margin: auto;
