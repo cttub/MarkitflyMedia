@@ -32,7 +32,7 @@ class Price extends Component {
 
                     <div className='price-box position-relative'>
                         <p className='title off-white primary'>Manage My Profile</p>
-                        <p className='secondary-purple price text-center'>$1,750<span className='flat-fee'>/setup fee</span> <br></br>$500<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$1,250<span className='flat-fee'>/setup fee</span> <br></br>$350<span className='flat-fee'>/month</span></p>
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
@@ -51,7 +51,7 @@ class Price extends Component {
                     <div className='price-box position-relative'>
                         <p className='price-tag off-white box-shadow'>Most Popular!</p>
                         <p className='title off-white secondary'>Start from Scratch</p>
-                        <p className='secondary-purple price text-center'>$3,750<span className='flat-fee'>/setup fee</span> <br></br>$850<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$1,750<span className='flat-fee'>/setup fee</span> <br></br>$350<span className='flat-fee'>/month</span></p>
                         
                         
                     <div className='list-container'>
@@ -60,8 +60,8 @@ class Price extends Component {
                             <li><img src={check1}/> Local SEO</li>
                             <li><img src={check1}/> Google Search Ads</li>
                             <li><img src={check1}/> Paid Traffic</li>
-                            <li><img src={check1}/> Website Design + Development</li>
-                            <li><img src={check1}/> Website Hosting + Maintenance</li>
+                            <li><img src={check1}/> Brand Design</li>
+                            <li><img src={check1}/> Website Design</li>
                             <li><img src={check1}/> Monthly Meetings</li>
                            
                                    
@@ -81,6 +81,7 @@ class Price extends Component {
                         <li><img src={check1}/> Local SEO</li>
                             <li><img src={check1}/> Google Search Ads</li>
                             <li><img src={check1}/> Paid Traffic</li>
+                            <li><img src={check1}/> Brand Design</li>
                             <li><img src={check1}/> Website Design + Development</li>
                             <li><img src={check1}/> Website Hosting + Maintenance</li>
                             <li><img src={check1}/> Monthly Meetings</li>
