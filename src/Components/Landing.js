@@ -14,6 +14,12 @@ class Landing extends Component {
         script.async = true;
         document.body.appendChild(script);
     }
+    scrollToConsultation = () => {
+        const consultAnchor = document.getElementById('consult-anchor');
+        if (consultAnchor) {
+            consultAnchor.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     toggleNewsletter = () => {
         const newsletterInfo = document.getElementById("newsletter-info");
@@ -46,7 +52,7 @@ class Landing extends Component {
                         <Fade duration={2000}><img className='logo' src={logo} alt='Logo' /></Fade>
                         <h1 className='headline off-white'>Captivate your Online Audience and Grow your Revenue</h1>
                         <p className='off-white'>We empower our clients with <strong>website design & development, business analysis & consultation,</strong> and <strong>online advertisement.</strong></p>
-                        <button><a>Schedule a <u>FREE</u> Consultation</a></button>
+                        <button  onClick={this.scrollToConsultation}><a>Schedule a <u>FREE</u> Consultation</a></button>
                     </div>
                 </section>
 
