@@ -32,7 +32,7 @@ class Price extends Component {
 
                     <div className='price-box position-relative'>
                         <p className='title off-white primary'>Manage My Profile</p>
-                        <p className='secondary-purple price text-center'>$1,250<span className='flat-fee'>/setup fee</span> <br></br>$350<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$2,997<span className='flat-fee'>/setup fee</span> <br></br>$799<span className='flat-fee'>/month</span></p>
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
@@ -51,7 +51,7 @@ class Price extends Component {
                     <div className='price-box position-relative'>
                         <p className='price-tag off-white box-shadow'>Most Popular!</p>
                         <p className='title off-white secondary'>Start from Scratch</p>
-                        <p className='secondary-purple price text-center'>$1,750<span className='flat-fee'>/setup fee</span> <br></br>$350<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$5,997<span className='flat-fee'>/setup fee</span> <br></br>$999<span className='flat-fee'>/month</span></p>
                         
                         
                     <div className='list-container'>
@@ -74,7 +74,7 @@ class Price extends Component {
 
                     <div className='price-box position-relative'>
                         <p className='title off-white third'>Grow my Numbers</p>
-                        <p className='secondary-purple price text-center'>$3,750<span className='flat-fee'>/setup fee</span> <br></br>$1,250<span className='flat-fee'>/month</span></p>
+                        <p className='secondary-purple price text-center'>$6,997<span className='flat-fee'>/setup fee</span> <br></br>$1,199<span className='flat-fee'>/month</span></p>
                         
                     <div className='list-container'>
                         <ul className='benefit-list brock-regular'>
@@ -98,6 +98,9 @@ class Price extends Component {
              
 
                 </section>
+                <br></br>
+                <h1 className='text-center pink'>Can't afford our services?</h1>
+                <p className='text-center'><b>Don't pay us the monthly fee,</b>until we grow your numbers.</p>
 
             </div>
         );
