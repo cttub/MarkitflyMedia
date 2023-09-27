@@ -36,16 +36,7 @@ class Landing extends Component {
     render() {
         return (
             <div id='landing'>
-                <Fade up>
-                    <div className={`box-shadow newsletter ${this.state ? this.state.show : 'show'}`} id='newsletter-info'>
-                        <div id="ff-compose"></div>
-                        <p className='off-white x-btn' onClick={this.toggleNewsletter}>X</p>
-                    </div>
-                    <div className={`box-shadow newsletter-icon ${this.state ? this.state.hide : 'hidden'}`} onClick={this.toggleNewsletter}>
-                        <img src={mail} alt='Mail Icon' />
-                        <div className='off-white noti'></div>
-                    </div>
-                </Fade>
+              
 
                 <section>
                     <div className='col-lg-7'>
